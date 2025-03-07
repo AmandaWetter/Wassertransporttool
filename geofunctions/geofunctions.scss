@@ -1,0 +1,77 @@
+.geom-text {
+  margin-top: 10px;
+  padding: 10px;
+  font-style: italic;
+}
+
+.geofunctions-tool {
+  background: url('~gr_mapfish3/apps/image/geofunktion.png') top left no-repeat;
+}
+.geofunctions-line {
+  background: url('~gr_mapfish3/apps/image/geofunktion_line.png') top left no-repeat;
+}
+.geofunctions-point {
+  background: url('~gr_mapfish3/apps/image/geofunktion_point.png') top left no-repeat;
+}
+.geofunctions-polygon {
+  background: url('~gr_mapfish3/apps/image/geofunktion_polygon.png') top left no-repeat;
+}
+
+// fix bug in ui-select
+.ui-select-choices {
+  opacity: 1 !important;
+}
+// enable multiline on select
+.ui-select-bootstrap .ui-select-choices-row > span {
+  white-space: normal !important;
+}
+.ui-select-bootstrap .form-control {
+  height: auto !important;
+}
+.ui-select-bootstrap .btn {
+  white-space: normal !important;
+}
+.ui-select-bootstrap > .ui-select-choices,
+.ui-select-bootstrap > .ui-select-no-choice {
+  max-height: 500px !important;
+}
+.ui-select-bootstrap small {
+  font-size: 10px;
+}
+
+// fix bug with bootsrap 4
+.caret {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid;
+  display: inline-block;
+  margin-left: 0;
+  vertical-align: middle;
+  width: 0;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.ui-select-toggle.btn {
+  border: 1px solid #ced4da;
+}
+
+.ui-select-choices.dropdown-menu {
+  display: block;
+}
+
+.ui-select-match.btn-default-focus {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: 0;
+}
+
+.ui-select-match.btn-default-focus > .ui-select-toggle {
+  border-color: #80bdff;
+}

@@ -1,0 +1,24 @@
+<div class="geofunctions">
+  <div>
+    <ui-select
+      ng-model="$ctrl.selectedTheme"
+      theme="bootstrap"
+      on-select="$ctrl.themeChanged()"
+      style="width: 250px"
+      title="Choose a geofunction"
+    >
+      <ui-select-match placeholder="{{'Select or search' | translate}}"
+        >{{$select.selected.bezeichnung}}</ui-select-match
+      >
+      <ui-select-choices repeat="item in $ctrl.filteredThemes | filter: $select.search">
+        <span ng-bind-html="item.bezeichnung | highlight: $select.search"></span>
+      </ui-select-choices>
+    </ui-select>
+
+    <span ng-show="$ctrl.themes.length == 0" translate>No geofunction available!</span>
+  </div>
+
+  <div class="geom-text" ng-if="$ctrl.geom_text != ''">
+    <span>{{$ctrl.geom_text}}</span>
+  </div>
+</div>
